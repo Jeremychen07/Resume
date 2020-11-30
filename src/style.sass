@@ -1,0 +1,382 @@
+$font-size: 30px
+
+*
+  font-family: 'Lora', sans-serif, '微軟正黑體'
+  box-sizing: border-box
+  //border: solid 1px red
+  font-size: $font-size/1.4
+  ////overflow-x: hidden
+  font-weight: 600
+  letter-spacing: 2px
+
+p
+  line-height: 1.6
+h1
+  font-size: $font-size * 2
+  font-weight: 900
+  color: black
+h2
+  font-size: $font-size
+h3
+  font-size: $font-size/1.2
+html,body
+  margin: 0
+  padding: 0
+  scroll-behavior: smooth
+.navbar
+  position: sticky
+  left: 0
+  top: 0
+  background-color: #C08552
+  transition: 0.5s
+  width: 100%
+  z-index: 8
+  a
+    text-align: center
+    display: inline-block
+    color: white
+    text-align: center
+    padding: 14px 20px
+    text-decoration: none
+    margin: 5px
+    border-radius: 5px
+    
+    &:hover
+      background-color: #ddd
+      color: black 
+//css 導覽列換行
+.fixed-nav
+  position: fixed
+  top: 0
+  
+.title
+  font-size: $font-size*2
+  font-weight: bold
+.name
+  font-size: $font-size*3.5
+.ename
+  border-bottom: 3px solid
+  padding: 30px 0
+  display: inline-block
+.header
+  padding: 150px 0
+  text-align: center
+  background-image: url(https://i.imgur.com/gp05crE.jpg)
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  color: white
+  background-attachment: fixed
+  height: 100vh
+  .box-shaw
+    display: inline-block
+    padding: 40px
+    background-color: rgba(0,0,0,0.6)
+  p
+
+    margin-top: 50px
+    opacity: 0
+    transition: 1s
+    &:after
+        display: block
+        content: "V"
+        transform: scaleX(1) scaleY(0.5)
+    &.at_top
+      opacity: 1
+      top: 80%
+.container
+  width: 100%
+  text-align: center
+.aboutcontainer
+  background-color: #DAB49D
+  padding: 30px 0
+  padding-bottom: 80px
+  .aboutcontent
+    //overflow-x: hidden
+    span#btn
+      border-radius: 25px
+      margin: 10px 0
+      display: block
+      cursor: pointer
+      transition: 0.5s
+      padding: 5px
+      background-color: #DE5E02
+      width: 200px
+      margin: 0 auto
+      margin-bottom: 10px
+      position: relative
+      color: white
+      &:hover
+        padding-right: 25px
+        &:after
+          opacity: 1
+          right: 30px
+      &:after
+        content: '\00bb'
+        position: absolute
+        right: 20px
+        opacity: 0
+        transition: 0.5s
+        
+    p.more
+      color: #8C0303
+      margin: 0 0 10px
+      //transition: 0.5s
+      display: none 
+      // &:hover
+      //   color: white
+    a
+      text-decoration: none
+    .icon
+      padding: 10px
+      border-radius: 25px
+      width: 200px
+      cursor: pointer
+      background-color: #A14402
+      color: white
+      &:hover
+        opacity: 0.7
+.skill
+  padding-bottom: 100px
+  .container
+    //overflow-x: hidden
+    width: 80%
+    max-width: 1000px
+    background-color: #ddd
+    margin: 0 auto
+  //html
+  .skillhtml
+    background-color: #4EA6A6
+    text-align: right
+    color: white
+    width: 80%
+  .html
+    transition: 0.5s
+    opacity: 0
+    background-color: #2C5159
+    &:hover
+      opacity: 1
+  //css
+  .skillcss
+    background-color: #4EA6A6
+    text-align: right
+    color: white
+    width: 80%
+  .css
+    transition: 0.5s
+    opacity: 0
+    background-color: #2C5159
+    &:hover
+      opacity: 1
+  //js/jq
+  .skilljs
+    background-color: #4EA6A6
+    text-align: right
+    color: white
+    width: 60%
+  .js
+    transition: 0.5s
+    opacity: 0
+    background-color: #2C5159
+    &:hover
+      opacity: 1
+  //sql
+  .skillsql
+    background-color: #4CAF50
+    text-align: right
+    color: white
+    width: 60%
+  .sql
+    transition: 0.5s
+    opacity: 0
+    background-color: #2196F3
+    &:hover
+      opacity: 1
+  //asp
+  .skillasp
+    background-color: #4CAF50
+    text-align: right
+    color: white
+    width: 30%
+  .asp
+    transition: 0.5s
+    opacity: 0
+    background-color: #2196F3
+    &:hover
+      opacity: 1
+
+#work
+  background-color: #D7B377
+  padding: 30px 0
+  padding-bottom: 40px
+  color: #27232f
+  .workcontent
+    padding-bottom: 10px
+    h2
+      color: #706357
+  .workcolumn
+    max-width: 1000px
+    margin: 0 auto
+    display: flex
+    text-align: left
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: center
+    .icon
+      //position: relative
+      width: 50%
+      cursor: pointer
+      max-width: 400px
+      img
+        width: 100%
+        height: auto
+    .worktext
+      width: 45%
+      margin-top: 3%
+      letter-spacing: 2px
+      margin-left: 30px
+      
+      h3
+        font-weight: 700
+#contact
+  overflow-x: hidden
+  margin: 0 auto
+  background-color: white
+  padding-top: 25px
+  padding-bottom: 50px
+  background-image: url(https://i.imgur.com/1CMv6EZ.png)
+  background-position: center 
+  background-size: cover
+  .content
+    padding: 25px 10px
+    //border: solid 1px blue
+    margin: 0 auto
+    width: 70%
+    //max-width: 500px
+    background-color: #decba5
+    color: white
+    box-shadow: 12px 12px 18px #888888
+    .icon
+      //border: solid 1px blue
+      flex-direction: row
+      display: flex
+      flex-wrap: wrap
+      .pic
+        width: 50%
+        max-width: 600px
+        img
+          width: 100%
+          height: auto
+          border-radius: 100%
+      .text
+        align-self: flex-end
+        min-width: 400px
+        width: 40%
+        margin-left: 30px
+        letter-spacing: 3px
+        // h2
+        //   font-size: $font-size
+        h3
+          color: #8C0303
+        p
+          display: block
+          font-weight: 100
+        a
+          text-decoration: none
+          padding-bottom: 50px
+          color: black
+.footer
+  padding: 40px
+  background: #000
+  color: white
+@media screen and (min-width: 769px)
+  #work
+    .workcolumn
+      //margin: 0 auto
+      img.icon
+        width: 40%
+      .worktext
+        width: 50%
+  #contact
+    .content
+      .icon
+        justify-content: center
+        flex-wrap: wrap
+        .text
+          text-align: center
+          margin-left: 0px
+          
+/*@media screen and (min-width: 321px) and (max-width: 768px)*/
+@media screen and (max-width: 768px)
+  .header 
+    background-attachment: initial
+    .box-shaw
+      padding: 50px
+      p
+        margin-top: 20px
+  .name,.ename
+    font-size: $font-size*1.2
+  *
+    font-size: $font-size/2.8
+  h1
+    font-size: $font-size/1.5
+  h2
+    font-size: $font-size/1.9
+  h3
+    font-size: $font-size/2.2
+  #work
+    // .workcontent
+    //   h2
+    //     font-size: $font-size/1.8
+    .workcolumn
+      justify-content: center
+      .worktext
+        margin-top: auto
+        width: 90%
+        margin-left: 0px
+        text-align: center
+        
+  .navbar 
+    a
+      padding: 3px
+      //font-size: $font-size/2.5
+      margin: 3px 3px 3px 3px
+  #contact
+    .content
+      width: 80%
+      .icon
+        flex-wrap: wrap
+        justify-content: center
+        .text
+          //text-align: center
+          margin-left: 0px
+          
+
+
+@media screen and (max-width: 320px)
+  .navbar 
+    padding: 5px
+    a
+      padding: 5px
+      font-size: $font-size/3
+      margin: auto
+  // .header
+  //   .box-shaw
+  //     padding: auto
+  //     .name
+  //       font-size: $font-size
+  // h1
+  //   font-size: $font-size
+  // #contact
+  //   .content
+  //     width: 80%
+  //     .icon
+  //       flex-wrap: wrap
+  //       justify-content: center
+  //       .text
+  //         //text-align: center
+  //         margin-left: 0px
+  // #work
+  //   .workcontent
+  //     h2
+  //       font-size: 23px
