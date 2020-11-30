@@ -1,8 +1,9 @@
 @charset "UTF-8";
 * {
-  font-family: "Lora", sans-serif, "微軟正黑體";
-  box-sizing: border-box;
-  font-size: 21.4285714286px;
+  font-family: 'Lora', sans-serif, '微軟正黑體';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 21.42857px;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -32,14 +33,17 @@ html, body {
 }
 
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   left: 0;
   top: 0;
   background-color: #C08552;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 100%;
   z-index: 8;
 }
+
 .navbar a {
   text-align: center;
   display: inline-block;
@@ -50,6 +54,7 @@ html, body {
   margin: 5px;
   border-radius: 5px;
 }
+
 .navbar a:hover {
   background-color: #ddd;
   color: black;
@@ -84,23 +89,29 @@ html, body {
   background-repeat: no-repeat;
   color: white;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
 }
+
 .header .box-shaw {
   display: inline-block;
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .header p {
   margin-top: 50px;
   opacity: 0;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 .header p:after {
   display: block;
   content: "V";
-  transform: scaleX(1) scaleY(0.5);
+  -webkit-transform: scaleX(1) scaleY(0.5);
+          transform: scaleX(1) scaleY(0.5);
 }
+
 .header p.at_top {
   opacity: 1;
   top: 80%;
@@ -116,11 +127,13 @@ html, body {
   padding: 30px 0;
   padding-bottom: 80px;
 }
+
 .aboutcontainer .aboutcontent span#btn {
   border-radius: 25px;
   margin: 10px 0;
   display: block;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 5px;
   background-color: #DE5E02;
@@ -130,28 +143,35 @@ html, body {
   position: relative;
   color: white;
 }
+
 .aboutcontainer .aboutcontent span#btn:hover {
   padding-right: 25px;
 }
+
 .aboutcontainer .aboutcontent span#btn:hover:after {
   opacity: 1;
   right: 30px;
 }
+
 .aboutcontainer .aboutcontent span#btn:after {
-  content: "»";
+  content: '\00bb';
   position: absolute;
   right: 20px;
   opacity: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .aboutcontainer .aboutcontent p.more {
   color: #8C0303;
   margin: 0 0 10px;
   display: none;
 }
+
 .aboutcontainer .aboutcontent a {
   text-decoration: none;
 }
+
 .aboutcontainer .aboutcontent .icon {
   padding: 10px;
   border-radius: 25px;
@@ -160,6 +180,7 @@ html, body {
   background-color: #A14402;
   color: white;
 }
+
 .aboutcontainer .aboutcontent .icon:hover {
   opacity: 0.7;
 }
@@ -167,79 +188,100 @@ html, body {
 .skill {
   padding-bottom: 100px;
 }
+
 .skill .container {
   width: 80%;
   max-width: 1000px;
   background-color: #ddd;
   margin: 0 auto;
 }
+
 .skill .skillhtml {
   background-color: #4EA6A6;
   text-align: right;
   color: white;
   width: 80%;
 }
+
 .skill .html {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
   background-color: #2C5159;
 }
+
 .skill .html:hover {
   opacity: 1;
 }
+
 .skill .skillcss {
   background-color: #4EA6A6;
   text-align: right;
   color: white;
   width: 80%;
 }
+
 .skill .css {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
   background-color: #2C5159;
 }
+
 .skill .css:hover {
   opacity: 1;
 }
+
 .skill .skilljs {
   background-color: #4EA6A6;
   text-align: right;
   color: white;
   width: 60%;
 }
+
 .skill .js {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
   background-color: #2C5159;
 }
+
 .skill .js:hover {
   opacity: 1;
 }
+
 .skill .skillsql {
   background-color: #4CAF50;
   text-align: right;
   color: white;
   width: 60%;
 }
+
 .skill .sql {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
   background-color: #2196F3;
 }
+
 .skill .sql:hover {
   opacity: 1;
 }
+
 .skill .skillasp {
   background-color: #4CAF50;
   text-align: right;
   color: white;
   width: 30%;
 }
+
 .skill .asp {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
   background-color: #2196F3;
 }
+
 .skill .asp:hover {
   opacity: 1;
 }
@@ -250,36 +292,51 @@ html, body {
   padding-bottom: 40px;
   color: #27232f;
 }
+
 #work .workcontent {
   padding-bottom: 10px;
 }
+
 #work .workcontent h2 {
   color: #706357;
 }
+
 #work .workcolumn {
   max-width: 1000px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 #work .workcolumn .icon {
   width: 50%;
   cursor: pointer;
   max-width: 400px;
 }
+
 #work .workcolumn .icon img {
   width: 100%;
   height: auto;
 }
+
 #work .workcolumn .worktext {
   width: 45%;
   margin-top: 3%;
   letter-spacing: 2px;
   margin-left: 30px;
 }
+
 #work .workcolumn .worktext h3 {
   font-weight: 700;
 }
@@ -294,42 +351,58 @@ html, body {
   background-position: center;
   background-size: cover;
 }
+
 #contact .content {
   padding: 25px 10px;
   margin: 0 auto;
   width: 70%;
   background-color: #decba5;
   color: white;
-  box-shadow: 12px 12px 18px #888888;
+  -webkit-box-shadow: 12px 12px 18px #888888;
+          box-shadow: 12px 12px 18px #888888;
 }
+
 #contact .content .icon {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 #contact .content .icon .pic {
   width: 50%;
   max-width: 600px;
 }
+
 #contact .content .icon .pic img {
   width: 100%;
   height: auto;
   border-radius: 100%;
 }
+
 #contact .content .icon .text {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   min-width: 400px;
   width: 40%;
   margin-left: 30px;
   letter-spacing: 3px;
 }
+
 #contact .content .icon .text h3 {
   color: #8C0303;
 }
+
 #contact .content .icon .text p {
   display: block;
   font-weight: 100;
 }
+
 #contact .content .icon .text a {
   text-decoration: none;
   padding-bottom: 50px;
@@ -349,17 +422,20 @@ html, body {
   #work .workcolumn .worktext {
     width: 50%;
   }
-
   #contact .content .icon {
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #contact .content .icon .text {
     text-align: center;
     margin-left: 0px;
   }
 }
-/*@media screen and (min-width: 321px) and (max-width: 768px) */
+
+/*@media screen and (min-width: 321px) and (max-width: 768px)*/
 @media screen and (max-width: 768px) {
   .header {
     background-attachment: initial;
@@ -370,29 +446,25 @@ html, body {
   .header .box-shaw p {
     margin-top: 20px;
   }
-
   .name, .ename {
     font-size: 36px;
   }
-
   * {
-    font-size: 10.7142857143px;
+    font-size: 10.71429px;
   }
-
   h1 {
     font-size: 20px;
   }
-
   h2 {
-    font-size: 15.7894736842px;
+    font-size: 15.78947px;
   }
-
   h3 {
-    font-size: 13.6363636364px;
+    font-size: 13.63636px;
   }
-
   #work .workcolumn {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #work .workcolumn .worktext {
     margin-top: auto;
@@ -400,23 +472,25 @@ html, body {
     margin-left: 0px;
     text-align: center;
   }
-
   .navbar a {
     padding: 3px;
     margin: 3px 3px 3px 3px;
   }
-
   #contact .content {
     width: 80%;
   }
   #contact .content .icon {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #contact .content .icon .text {
     margin-left: 0px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .navbar {
     padding: 5px;
@@ -427,3 +501,4 @@ html, body {
     margin: auto;
   }
 }
+/*# sourceMappingURL=style.css.map */
