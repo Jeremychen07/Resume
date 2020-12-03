@@ -47,6 +47,9 @@
 ## 作品
 
 * 個人介紹網頁 - https://jeremychen07.github.io/Resume/dist/index.html
+  * 利用html/Pug、Css/Sass/Rwd、Javascript、jQuery 製作出個人履歷網頁。
+* Bootstrap - https://jeremychen07.github.io/Bootstrap_Hiphop/index.html
+  * 學習利用Bootstrap工具切版，搭配HTML/CSS，做出類似部落格的網頁，並能在手機上觀看。
 
 ## 自我介紹
 
