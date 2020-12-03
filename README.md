@@ -1,4 +1,3 @@
-關於我
 # 陳柏宇 （Boyu Chen）
 
 * Birthday : 03/28/1998
