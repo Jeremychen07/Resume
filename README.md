@@ -12,9 +12,9 @@
 #### 綿春纖維工業股份有限公司-實習生- 2019 07-08 ~ 2020 06-30
 
 * 使用技術:(Biztalk Server、C#、MSSQL)
-* 利用Biztalk Server維護Web Service
-* 與三家以上客戶進行API對接
-* 依照商業邏輯，修改Stored procedure
+* 利用Biztalk Server修改與維護Web Service。 
+* 與三家以上客戶進行溝通與用Postman測試API對接。
+* 依照商業邏輯，新增/修改資料庫Stored procedure與function。
 
 ## 技能
 
