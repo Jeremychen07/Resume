@@ -5,6 +5,7 @@
 * Location : 台北市
 * E-Mail : a27262354@gmail.com
 * Mobile : 0976201274
+* CakeResume: https://www.cakeresume.com/s--VK2hhCRbRcHhcHisYDRojA--/a27262354
 
 ## 工作經驗
 
