@@ -50,6 +50,9 @@
   * 利用html/Pug、Css/Sass/Rwd、Javascript、jQuery 製作出個人履歷網頁。
 * Bootstrap - https://jeremychen07.github.io/Bootstrap_Hiphop/index.html
   * 學習利用Bootstrap工具切版，搭配HTML/CSS，做出類似部落格的網頁，並能在手機上觀看。
+* 台灣觀光資訊 - https://jeremychen07.github.io/Tourist-Area/dist/index.html
+  * 利用html/Pug、Css/Sass/Rwd、Javascript、jQuery、AJAX 製作出台灣觀光資訊網。
+  * 以政府資料開放平台，JSON檔做串接，資料來源:https://data.gov.tw/dataset/7778
 
 ## 自我介紹
 
