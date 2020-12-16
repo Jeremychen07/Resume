@@ -13,32 +13,32 @@
 
 * 使用技術:(Biztalk Server、C#、MSSQL)
 * 利用Biztalk Server修改與維護Web Service。 
-* 與三家以上客戶進行溝通與用Postman測試API對接。
+* 與三家以上客戶進行溝通與用完成API對接。
 * 依照商業邏輯，新增/修改資料庫Stored procedure與function。
 
 ## 技能
 
 ### HTML/CSS
 
-* 瞭解 HTML 語意。
+* 瞭解、使用 HTML 語意。
 * 能夠使用 CSS 做出網頁排版與 RWD 響應式設計。
-* 使用 SASS。
+* 使用 Pug/Sass。
  
 ### Javascript/Framework
 
 * 對 Javascript 有基礎的了解。
-* BootStrap - 有使用過做網頁排版。
+* BootStrap - 網頁排版。
 * jQuery - 會使用 Jquery 做動畫效果、ajax 抓取第三方 api 資料。
 
 ### ASP.NET/C#
 
 * 基礎的了解物件導向。
-* 有使用過IIS架設網站。
+* 使用過IIS架設網站。
 
 ### MSSQL
 
 * 基礎語法了解
-* 過去使用過Stored Procedure、Function。
+* 使用Stored Procedure、Function。
 
 ### Git/GitHub
 
@@ -56,6 +56,6 @@
 
 ## 自我介紹
 
-* 2020九月接觸前端，當時在服役替代役，利用閒餘時間學習，剛開始學習是看線上課程，從實例中慢慢發現自己對前端技術感到興趣，以自學方式努力學習、專精前端技術，先朝向專業前端工程師邁進。
+* 2020九月接觸前端，當時在服役替代役，利用閒餘時間學習，剛開始學習是看線上課程，從實例中慢慢發現自己對前端技術感到興趣，以自學方式努力學習、專精前端技術，朝向專業工程師邁進。
 * 喜歡學習新技術，因為了解前端技術學不完，更新速度也滿快，但發現新的東西並學習之後會有成就感。
 * 願意溝通與團隊合作，期待能與夥伴們一起朝同個目標前進。
