@@ -8,9 +8,9 @@ $font-size: 30px
   ////overflow-x: hidden
   font-weight: 600
   letter-spacing: 2px
-
+  
 p
-  line-height: 1.6
+  line-height: 1.58
 h1
   font-size: $font-size * 2
   font-weight: 900
@@ -89,6 +89,7 @@ html,body
   text-align: center
 .aboutcontainer
   background-color: #DAB49D
+  background-image: linear-gradient( 80deg, #C08552, #DAB49D)
   padding: 30px 0
   padding-bottom: 80px
   .aboutcontent
@@ -206,7 +207,7 @@ html,body
       opacity: 1
 
 #work
-  background-color: #D7B377
+  background-image: linear-gradient( -80deg, #C08552, #DAB49D)
   padding: 30px 0
   padding-bottom: 40px
   color: #27232f
@@ -249,31 +250,36 @@ html,body
   background-size: cover
   .content
     padding: 25px 10px
-    //border: solid 1px blue
     margin: 0 auto
     width: 70%
-    //max-width: 500px
+    max-width: 800px
     background-color: #decba5
     color: white
-    box-shadow: 12px 12px 18px #888888
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5)
+    display: flex
+    flex-wrap: wrap
     .icon
-      //border: solid 1px blue
-      flex-direction: row
       display: flex
-      flex-wrap: wrap
+      width: 100%
       .pic
         width: 50%
-        max-width: 600px
+        display: flex
+        align-items: center
+        justify-content: center
+
+
         img
           width: 100%
+          max-width: 380px
           height: auto
-          border-radius: 100%
+          border-radius: 50%
+          vertical-align: middle
+          object-fit: cover
       .text
-        align-self: flex-end
-        min-width: 400px
-        width: 40%
-        margin-left: 30px
+        width: 50%
+        margin-left: 5px
         letter-spacing: 3px
+        
         // h2
         //   font-size: $font-size
         h3
@@ -283,12 +289,13 @@ html,body
           font-weight: 100
         a
           text-decoration: none
-          padding-bottom: 50px
           color: black
 .footer
-  padding: 40px
+  padding: 10px
   background: #000
   color: white
+  p
+    font-size: 10px
 @media screen and (min-width: 769px)
   #work
     .workcolumn
@@ -297,14 +304,14 @@ html,body
         width: 40%
       .worktext
         width: 50%
-  #contact
-    .content
-      .icon
-        justify-content: center
-        flex-wrap: wrap
-        .text
-          text-align: center
-          margin-left: 0px
+  // #contact
+  //   .content
+  //     .icon
+  //       justify-content: center
+  //       flex-wrap: wrap
+  //       .text
+  //         text-align: center
+  //         margin-left: 0px
           
 /*@media screen and (min-width: 321px) and (max-width: 768px)*/
 @media screen and (max-width: 768px)
@@ -341,16 +348,17 @@ html,body
       padding: 3px
       //font-size: $font-size/2.5
       margin: 3px 3px 3px 3px
-  #contact
+  #contact 
     .content
-      width: 80%
       .icon
         flex-wrap: wrap
         justify-content: center
+        width: 100%
         .text
-          //text-align: center
           margin-left: 0px
-          
+          width: 100%
+       
+        
 
 
 @media screen and (max-width: 320px)
