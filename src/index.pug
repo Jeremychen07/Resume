@@ -5,10 +5,10 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Jeremy - Resume
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css')
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&display=swap"rel="stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap' rel='stylesheet')
     link(rel='stylesheet' href='./style.css')
   body
-    // partial:index.partial.html
+    //- partial:index.partial.html
     .container
       #home.header
         .box-shaw
@@ -16,12 +16,12 @@ html(lang='en')
           .title.ename  RESUME
           p.at_top READ MORE
       nav#main.navbar
-        a.fa.fa-home(href='#home')
+        a(href='#home') HOME
         a(href='#about') ABOUT
         a(href='#skills') SKILLS
         a(href='#work') WORKS
         a(href='#contact') CONTACT
-      // about me
+      //-  about me
       #about
         .aboutcontainer
           .aboutcontent
@@ -50,50 +50,47 @@ html(lang='en')
               br
               | 在工作上運用所學的
               br
-              | 貴公司有興趣請與我聯絡！謝謝！
-              br
             span#btn Read more
             a.icon.fa.fa-cloud-upload(href='https://www.cakeresume.com/s--VK2hhCRbRcHhcHisYDRojA--/a27262354' target='_blank')  履歷
       #skills.skill
         h1 Skills
-        p HTML
-        .container
-          .skillhtml
-            .html 80%
-        p CSS
-        .container
-          .skillcss
-            .css 80%
-        p JavaScript , JQuery
-        .container
-          .skilljs
-            .js 60%
-        p MS SQL
-        .container
-          .skillsql
-            .sql 60%
-        p C#、ASP.NET
-        .container
-          .skillasp
-            .asp 30%
+        .content
+          p HTML
+          .container
+            .skillhtml
+              .html 80%
+          p CSS
+          .container
+            .skillcss
+              .css 80%
+          p JavaScript , JQuery
+          .container
+            .skilljs
+              .js 60%
+          p MS SQL
+          .container
+            .skillsql
+              .sql 60%
+          p C#、ASP.NET
+          .container
+            .skillasp
+              .asp 30%
       #work
         .workcontent
           h1 Works Experience 
-          h2
-            | 綿春纖維工業股份有限公司(實習)
-            br
-            | 2019 年 07 月 - 2020 年 06月
         .workcolumn
-          .icon
-            a(href='http://www.mds-intl.com/zh-tw/Home' target='_blank')
-              img(src='https://www.mds-efab.com/_admin/upload/5c6baa412c359.jpg' alt='')
-          .worktext
-            h3 使用語言:C#
-            h3 資料庫:Microsoft SQL Server
-            h3 工作內容:
-            p 利用Biztalk Server維護Web Service
-            p 與三家以上客戶進行API對接
-            p 依照商業邏輯，修改Stored procedure
+          .workcontainer
+            .icon
+              a(href='http://www.mds-intl.com/zh-tw/Home' target='_blank')
+                img(src='https://www.mds-efab.com/_admin/upload/5c6baa412c359.jpg' alt='')
+            .worktext
+              h2 綿春纖維工業股份有限公司(實習)
+              h3 2019年07月-2020年6月
+              h3 使用語言:C# 資料庫:MSSQL
+              h3 工作內容:
+              p 利用Biztalk Server維護Web Service
+              p 與三家以上客戶進行API對接
+              p 依照商業邏輯，修改Stored procedure
       #contact
         h1 Contact
         .content
@@ -106,10 +103,10 @@ html(lang='en')
               p 0976201274
               h3 Email:
               p a27262354@gmail.com
-              a.fa.fa-facebook-official.fa-3x(href='https://www.facebook.com/profile.php?id=100000383322158' target='_blank' aria-hidden='true')
+              a.fa.fa-facebook-official.fa-2x(href='https://www.facebook.com/profile.php?id=100000383322158' target='_blank' aria-hidden='true')
       .footer 
         p Copyright © Jeremy All rights reserved.
-    // partial
+    //- partial
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js')
     script(src='./script.js')
